@@ -1,0 +1,195 @@
+/* styles.css */
+body {
+     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 15px;
+        background-color: #f0f4f8;
+        color: #333;
+         height: 400px;
+            width: 450px;
+}
+ .home{
+           
+            height: 100%;
+            width: 100%;
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        h1, h2, h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .cparent{
+            display: none;
+        }
+   .header {
+    font-size: x-small;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.header div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#authTokenDisplay, #cookieDisplay {
+    max-width: 200px; /* Adjust this value as needed */
+    display: inline-block;
+    vertical-align: top;
+}
+h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+ .container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+        overflow-y: scroll;
+      }
+      #daysGrid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .day-item,
+      .module-item {
+        background-color: #f8f9fa;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        padding: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .day-item {
+        flex: 1;
+       width: 120px;
+       height: 100px;
+      }
+      .day-item:hover,
+      .module-item:hover {
+        background-color: #e9ecef;
+      }
+      .completed {
+        color: #28a745;
+      }
+      .in-progress {
+        color: #ffc107;
+      }
+      #moduleList {
+        display: none;
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      #backButton {
+        background-color: #6c757d;
+        margin-bottom: 15px;
+      }
+      #backButton:hover {
+        background-color: #5a6268;
+      }
+      .checkbox-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+      .checkbox-container input[type="checkbox"] {
+        margin-right: 10px;
+      }
+      ul {
+        list-style-type: none;
+        padding-left: 20px;
+      }
+      .action-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        align-items: center;
+      }
+      .status-info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        font-size: 0.9em;
+      }
+      #selectAllContainer {
+        display: flex;
+        align-items: center;
+      }
+      #selectAllContainer input[type="checkbox"] {
+        margin-right: 10px;
+      }
+   .circular-progress {
+        position: relative;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: conic-gradient(#7d2ae8 0deg, #ededed 0deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        transition: 100ms all cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      .circular-progress::before {
+
+        content: "";
+        position: absolute;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        background-color: #fff;
+        cursor: pointer;
+      }
+      .circular-progress::before:hover{
+        background-color: #f8f9fa;
+      }
+      .progress-value {
+        position: relative;
+        font-size: 18px;
+        font-weight: 600;
+        color: #7d2ae8;
+        transition: 100ms all cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      .circular-progress.loading {
+    cursor: progress;
+}
+
+.circular-progress.loading::before {
+    cursor: progress;
+}
+
+.progress-value.loading {
+    cursor: progress;
+}
+
+.erroor{
+  text-align: center;
+}

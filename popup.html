@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module Tracker</title>
+    <link rel="stylesheet" href="style.css">
+  
+   
+    
+  </head>
+  <body>
+    <div class="home">
+      <div style="text-align: center; font-size: x-large">
+        <h2 style="padding: 0; margin: 0">Auto</h2>
+        <h3 style="padding: 0; margin: 0">LMS</h3>
+      </div>
+     <div style="position: relative; margin-top: 10px;"> 
+       
+      
+        <div id="homeButtonto" style="color: black;" 
+        class="circular-progress">
+        <span style="cursor: pointer;" id="homeButton" 
+        class="progress-value">ENTER</span>
+        
+
+     
+    </div>
+      
+    </div>
+    <div style="color: red;" id="error"></div>
+     <h6>ANONYMOUS</h6>
+     
+    </div>
+    <div class="cparent">
+        <div class="header">
+    <div id="authTokenDisplay"></div>
+    <div  id="cookieDisplay"></div>
+    
+    </div>
+    <div class="main">
+   <div class="container">
+      
+      
+      
+      <div id="daysGrid"></div>
+      <div id="moduleList">
+        <button id="backButton">← Back</button>
+        <div id="modulesContainer"></div>
+      </div>
+      
+    </div>
+    <div class="action-buttons">
+        <div id="selectAllContainer">
+          <input type="checkbox" id="selectAll" />
+          <label for="selectAll">Select All Uncompleted</label>
+        </div>
+        <div style="color: rgb(47, 255, 61);" id="mes">Select To Start </div>
+        <button id="startButton">Start Selected</button>
+      </div>
+      </div>
+      <div class="loader" style="height: 400px;    width: 100%; display: none; justify-content: center; align-items: center; flex-direction: column;">
+          <div style="position: relative; "> 
+       
+      
+        <div id="homeButtontom" style="color: black;" class="circular-progress">
+        <span style="cursor: pointer;" id="homeButtono" class="progress-value">0%</span>
+        
+
+     
+    </div>
+      </div>
+      <div style="color: rgb(47, 255, 68);" id="mess"></div>
+      <div style="color: red;" id="erroor"></div>
+      <button style="display: none;" id="blue">Home</button>
+    </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

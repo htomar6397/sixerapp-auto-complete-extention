@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "sixerapp auto complete",
+  "version": "1.0",
+  "permissions": ["storage", "cookies", "activeTab", "tabs", "scripting"],
+ "host_permissions": [
+    "https://sixerapp.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
